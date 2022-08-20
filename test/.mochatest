@@ -1,0 +1,41 @@
+
+/* 
+
+MOCHA Testing overview
+
+It is a test running framework to test any type of JavaScript code. Small set of fx to understand. 
+3 fx: 
+it: run a test and make an assertion
+describe: groups together 'it' functions
+beforeEach: execute some general setup code
+
+class Car {
+  park() {
+    return 'stopped';
+  }
+
+  drive() {
+    return 'vroom';
+  }
+}
+
+let car ; 
+
+console.log('Initializing test...');
+
+beforeEach(() => {
+  car = new Car();  
+});
+
+describe('Car', () => {
+  it('can park', () => {
+    assert.equal(car.park(), 'stopped');
+  })
+
+  it('can drive', () => {
+    assert.equal(car.drive(), 'vroom');
+  })
+});
+
+*/
+
